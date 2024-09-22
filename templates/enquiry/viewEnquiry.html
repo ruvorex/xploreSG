@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+{% block title %}Explore Singapore - Contact Us{% endblock %}
+
+{% block content %}
+<div class="row">
+    <div class="col-lg-6">
+        <form method = 'post' enctype="multipart/form-data">
+            <div class="mb-3">
+                {{ formHelper.renderField(form.name) }}
+            </div>
+            <div class="mb-3">
+                {{ formHelper.renderField(form.email) }}
+            </div>
+            <div class="mb-3">
+                {{ formHelper.renderField(form.purpose) }}
+            </div>
+            <div class="mb-3">
+                {{ formHelper.renderField(form.query) }}
+            </div>
+            <div class="mb-3">
+                {{ formHelper.renderField(form.submit) }}
+            </div>
+        </form>
+    </div>
+</div>
+{% endblock %}

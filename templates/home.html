@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% block title %}Explore Singapore - Home {% endblock %}
+
+{% block content %}
+<section class="showcase">
+    <div class="video-container">
+      <video src="../static/vid/vid.mp4" autoplay muted loop></video>
+    </div>
+    <div class="content">
+      <h1>Explore Singapore</h1>
+      <h3>With a new outlook!</h3>
+      <a href="#about" class="btn" style="color:white; border: solid white 1px;">Read More</a>
+    </div>
+</section>
+<div class="container" id="container2">
+    <section id="about">
+        <h1 id="header">About</h1>
+        <p>
+            Explore and visit new places around Singapore that are not so well known! Bring your family and friends along for a fun and enjoyable trip!
+        </p>
+    </section>
+</div>
+{% endblock %}

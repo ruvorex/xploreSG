@@ -1,0 +1,94 @@
+<!--Navbar for website-->
+<nav class="navbar navbar-expand-lg navbar-light " style="z-index: 1000000;">
+    <a class="navbar-brand" href="../homepage/index.html" style="font-weight: bold;">Explore Singapore</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent" >
+        <ul class="navbar-nav mr-auto" id="navbar" >
+            <li class="nav-item active">
+                <a class="nav-link" href="{{ url_for('home')  }}"><h5 >Home</h5><span class="sr-only"></span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="../aboutus/aboutus.html"><h5 >About Us</h5></a>
+            </li>
+            <li class="nav-item dropdown" style="display: inline-block;" >
+                <a class="nav-link dropdown-toggle d-flex align-items-center" href="#" data-bs-toggle="dropdown"><h5>Places to visit</h5></a>
+                <div class="dropdown-menu dropdown-large">
+                    <div class="row g-3">
+                        <div class="col-4">
+                            <h4 class="title"><a href="../places to visit/places to visit.html">Places to Visit</a></h4>
+                        </div>
+                    </div>
+                    <div class="row g-3">
+                        <div class="col-4">
+                            <h5 class="title"><a href="../north/north.html">North</a></h5>
+                            <ul class="list-unstyled">
+                                <li><a href="../north/Hampstead Wetlands Park.html">Hampstead Wetlands Park</a></li>
+                                <li><a href="../north/Kranji Marshes.html">Kranji Marshes</a></li>
+                            </ul>
+                        </div>
+                        <!-- end col-3 -->
+                        <div class="col-4">
+                            <h5 class="title"><a href="../south/south.html">South</a></h5>
+                            <ul class="list-unstyled">
+                                <li><a href="../south/St%20James%20Power%20Station.html">St James Power Station</a></li>
+                                <li><a href="../south/Rotunda_Library_Archive.html">Rotunda Library & Archive</a></li>
+                                <li><a href="../south/Wood_in_the_Books.html">Wood in the Books</a></li>
+                                <li><a href="../south/Vintage_Camera_Museum.html">Vintage Camera Museum</a></li>
+                                <li><a href="{{ url_for('south.viewLazarusIsland')  }}">Lazarus Island</a></li>
+                                <li><a href="../south/Berlayer_Creek_Boardwalk.html">Berlayer Creek Boardwalk</a></li>
+                            </ul>
+                        </div>
+                        <!-- end col-3 -->
+                        <div class="col-4">
+                            <h5 class="title"><a href="../east/east.html">East</a></h5>
+                            <ul class="list-unstyled">
+                                <li><a href="../east/Changi Bay Point.html">Changi Bay Point</a></li>
+                                <li><a href="../east/Japanese Cemetery Park.html">Japanese Cemetry Park</a></li>
+                            </ul>
+                        </div>
+                        <!-- end col-3 -->
+                    </div>
+                    <!-- end row -->
+                    <hr style="background-color: white;" />
+                    <div class="row g-3">
+                        <div class="col-4">
+                            <h5 class="title"><a href="../west/west.html">West</a></h5>
+                            <ul class="list-unstyled">
+                                <li><a href="../west/Junkies Corner.html">Junkies Corner</a></li>
+                                <li><a href="../west/Maju Forest.html">Maju Forest</a></li>
+                            </ul>
+                        </div>
+                        <!-- end col-3 -->
+                        <div class="col-4">
+                            <h5 class="title"><a href="../central/central.html">Central</a></h5>
+                            <ul class="list-unstyled">
+                                <li><a href="../central/Dragon Playground.html">Dragon Playground </a></li>
+                                <li><a href="../central/National Orchid Garden.html">National Orchid Garden </a></li>
+                            </ul>
+                        </div>
+                        <!-- end col-3 -->
+                    </div>
+                    <!-- end row -->
+                    <!-- end row -->
+                </div>
+                <!-- dropdown-large.// -->
+            </li>
+            <li class="nav-item" >
+                <a class="nav-link d-flex align-items-center" href="../blog/blog home.html"><h5>Blog</h5></a>
+            </li>
+        </ul>
+    </div>
+</nav>
+<script type="text/javascript">
+    document.addEventListener("DOMContentLoaded", function () {
+        /////// Prevent closing from click inside dropdown
+        document.querySelectorAll(".dropdown-menu").forEach(function (element) {
+            element.addEventListener("click", function (e) {
+                e.stopPropagation();
+            });
+        });
+    });
+</script>

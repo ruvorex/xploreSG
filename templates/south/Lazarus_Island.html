@@ -1,0 +1,105 @@
+{% extends "base.html" %}
+{% block title %}Explore Singapore - Lazarus Island {% endblock %}
+
+{% block content %}
+<style>
+    #containerabout {
+        width: 100%;
+        height: 90vh;
+        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://media.cntraveler.com/photos/5a9174c820dfb6552425e85d/16:9/w_1920,c_limit/Lazarus-Island_GettyImages-481012244.jpg);
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #fff;
+        font-size: 2vw;
+        max-height: 600px;
+    }
+</style>
+<body>
+
+        <!-- breadcrumbs -->
+        <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="../homepage/index.html">Home</a></li>
+                <li class="breadcrumb-item"><a href="../places to visit/places to visit.html">Places to Explore</a></li>
+                <li class="breadcrumb-item"><a href="/south.html">South</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Lazarus Island</li>
+            </ol>
+        </nav>
+
+    <!-- Header Image -->
+
+        <div id="containerabout">
+            <div class="centered">
+                <h2 class="headerabout" id="header">Lazarus Island</h2>
+            </div>
+        </div>
+
+    <div class="container" id="containerbackground">
+        <div class="container" id="container2">
+            <div class="row">
+                <div class="col-12">
+                    <h2 class="header">About Us</h2>
+                </div>
+                <div class="col-12">
+                    <p>
+                    On Lazarus Island in the late 19th century, there were a number of prison confinement sheds, but they were abandoned when an inmate serving a life sentence there managed to escape. The confinement barns were completely burned by a wildfire in 1902, and the entire area's vegetation was completely devastated by a huge fire in 1914. Lazarus Island was intended to be turned into a beach resort by the government, but those plans were never carried out. Lazarus Island attracts throngs of tourists who come to enjoy the spotless white sand beach on the C-shaped lagoon. It has also been referred to as one of Singapore's best-kept secrets and one of the forgotten islands. Lazarus Island attracts beachgoers and families seeking some peaceful time to be with loved ones.
+                    </p>
+                </div>
+                <div class="col-12">
+                    <h2 class="header">Places to Explore</h2>
+                </div>
+                <div class="col-12">
+                    <iframe width="1223" height="688" src="https://www.youtube.com/embed/KW5dP3qQV_E" title="Hidden Gems in Singapore (St. John's Island and Lazarus Island)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+
+
+                <p>Credits: <a href="https://www.cntraveler.com/activities/singapore/lazarus-island" target="_blank" rel="noopener noreferrer">CNTraveler</a>, <a href="https://islandcruise.com.sg/places-of-interest/lazarus-island/" target="_blank" rel="noopener noreferrer">Island Cruise</a></p>
+            </div>
+        </div>
+        <div class='container' id="container2">
+            <div class="row">
+                <div class="col-6">
+                    <h2 class="header">Map</h2>
+                    <div class="iframe-rwd">
+                        <iframe width="425" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11282.343534406686!2d103.84776495644498!3d1.222066929775941!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31da1ee8b3f07ab9%3A0x734f010b626b98ce!2sLazarus%20Island!5e0!3m2!1sen!2ssg!4v1659269187657!5m2!1sen!2ssg" ></iframe>
+                        <br>
+                        <small>
+                          <a href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11282.343534406686!2d103.84776495644498!3d1.222066929775941!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31da1ee8b3f07ab9%3A0x734f010b626b98ce!2sLazarus%20Island!5e0!3m2!1sen!2ssg!4v1659269187657!5m2!1sen!2ssg"   style="color:#0000FF;text-align:left">View Larger Map</a>
+                        </small>
+                    </div>
+                </div>
+                <div class = 'col-6'>
+                    <h2 class="header">Operating Hours</h2>
+                    <table class="table table-hover">
+                        <thead>
+                            <tr>
+                                <th>Days</th><th>Timing</th>
+                            </tr>
+                        </thead>
+                        <tbody >
+                            <tr>
+                                <td>Monday-Sunday</td><td>Open 24 hours</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <p>*Please note that some venues may be subject to opening hours, please visit their official website to confirm opening hours</p>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- End of .container -->
+    <script type="text/javascript">
+        var myModal = document.getElementById("myModal");
+        var myInput = document.getElementById("myInput");
+        myModal.addEventListener("shown.bs.modal", function () {
+            myInput.focus();
+        });
+    </script>
+</body>
+{%  endblock %}
